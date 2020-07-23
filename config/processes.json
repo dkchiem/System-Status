@@ -1,0 +1,13 @@
+[
+  {
+    "displayName": "Minecraft vanilla",
+    "processName": "minecraft@vanilla",
+    "command": {
+      "execute": "pm2 jlist | jq '.[0].pm2_env.status",
+      "output": {
+        "active": "online",
+        "inactive": "stopped"
+      }
+    }
+  }
+]

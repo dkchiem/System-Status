@@ -1,0 +1,12 @@
+{
+  "port": 5000,
+  "defaultStatus": "inactive",
+  "status": {
+    "active": {
+      "color": "#2ecc71"
+    },
+    "inactive": {
+      "color": "#e74c3c"
+    }
+  }
+}

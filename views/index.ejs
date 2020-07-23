@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Status</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>System Status</h1>
+    <% processes.forEach((process) => { %>
+    <div class="process">
+      <div
+        class="dot"
+        style="background-color: <%= statusConfig[process.status].color %>;"
+      ></div>
+      <%= process.name %>
+    </div>
+    <% }) %>
+  </body>
+</html>
