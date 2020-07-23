@@ -11,10 +11,7 @@ app.use(express.static(__dirname + "/public"));
 app.get("/", function (req, res) {
   const processes = [];
   configProcesses.forEach((process) => {
-    // let status = execSync(${process.command.execute})
-    //   .toString()
-    //   .trim();
-    let status = "activ";
+    let status = execSync(process.command.execute).toString().trim();
 
     if (!configGeneral.status[status]) {
       // throw "Process status not found in configuration!";
